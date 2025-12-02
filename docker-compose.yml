@@ -1,0 +1,87 @@
+﻿version: '3.8'
+
+services:
+  # 1. Sipariş Veritabanı
+  sql-order:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shop-sql-order
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=StrongPass123!
+    ports:
+      - "1433:1433" # Default Port
+    networks:
+      - shop-net
+
+  # 2. Stok Veritabanı
+  sql-stock:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shop-sql-stock
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=StrongPass123!
+    ports:
+      - "1434:1433" # Port 1434
+    networks:
+      - shop-net
+
+  # 3. Ödeme Veritabanı
+  sql-payment:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shop-sql-payment
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=StrongPass123!
+    ports:
+      - "1435:1433" # Port 1435
+    networks:
+      - shop-net
+
+  # RabbitMQ
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: shop-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - shop-net
+
+ 
+   # Log Veritabanı
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    container_name: shop-elastic
+    environment:
+      - node.name=shop-elastic
+      - cluster.name=es-docker-cluster
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m" # RAM kullanımını sınırlar
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    networks:
+      - shop-net
+
+  # Log İzleme Ekranı
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.9
+    container_name: shop-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: '["http://elasticsearch:9200"]'
+    networks:
+      - shop-net
+    depends_on:
+      - elasticsearch
+
+networks:
+  shop-net:
+    driver: bridge

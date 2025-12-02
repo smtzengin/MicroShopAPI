@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,615 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\services\\stockworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\stockworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\data\\stockdbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\data\\stockdbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\data\\stockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\data\\stockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\microshop.stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\microshop.stockapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\models\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\extensions\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\extensions\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\data\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.shared\\data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\data\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\entities\\paymentlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\entities\\paymentlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\data\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\data\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\data\\paymentdbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\data\\paymentdbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\data\\paymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\data\\paymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\services\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\services\\imessageproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.orderapi\\microshop.orderapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\microshop.orderapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEA8D58-BA35-4AC5-BFA0-875C42F411D5}|Solution Items{1AEA8D58-BA35-4AC5-BFA0-875C42F411D5}|C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{1AEA8D58-BA35-4AC5-BFA0-875C42F411D5}|Solution Items{1AEA8D58-BA35-4AC5-BFA0-875C42F411D5}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\smtzn\\onedrive\\belgeler\\github\\microshopapi\\microshop.paymentapi\\microshop.paymentapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\microshop.paymentapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MicroShop.StockAPI",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
+              "RelativeToolTip": "MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T19:58:02.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Data\\Repository.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Data\\Repository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:05:05.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Data\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Data\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Data\\UnitOfWork.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Data\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:05:33.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoggingExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Extensions\\LoggingExtensions.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Extensions\\LoggingExtensions.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Extensions\\LoggingExtensions.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Extensions\\LoggingExtensions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBgAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:48:59.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:04:09.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:04:32.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:15:25.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderWorker.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwDgAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:51:45.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Controllers\\StockController.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Controllers\\StockController.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Controllers\\StockController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:36:06.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StockDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:33:01.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StockDbSeed.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:31:37.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StockService.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockService.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:33:29.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StockWorker.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowDAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:35:06.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:28:47.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wCMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T19:18:46.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentLog.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:42:05.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\Wallet.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\Wallet.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\Wallet.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\Wallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:59:07.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PaymentDbSeed.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:59:44.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PaymentDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:42:42.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderState.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Models\\OrderState.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\OrderState.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.Shared\\Models\\OrderState.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\OrderState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:02:57.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Controller\\OrderController.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Controller\\OrderController.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Controller\\OrderController.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Controller\\OrderController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:21:18.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:24:18.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IMessageProducer.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\IMessageProducer.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\IMessageProducer.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\IMessageProducer.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Services\\IMessageProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:24:00.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:08:19.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateOrderdto.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T19:00:53.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwCMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:08:54.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\appsettings.json",
+              "RelativeToolTip": "MicroShop.StockAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T18:38:12.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:43:52.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:11:41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\appsettings.json",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T19:33:14.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\appsettings.json",
+              "RelativeToolTip": "MicroShop.OrderAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T18:09:08.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.StockAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwC8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T19:08:40.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MicroShop.PaymentAPI",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T18:41:53.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MicroShop.OrderAPI",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
+              "RelativeToolTip": "MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T18:48:07.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\smtzn\\OneDrive\\Belgeler\\Github\\MicroShopAPI\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwEkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-02T17:56:07.77Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
