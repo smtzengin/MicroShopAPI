@@ -33,9 +33,11 @@ public class StockWorker : BackgroundService
         {
             var body = ea.Body.ToArray();
             var json = Encoding.UTF8.GetString(body);
-            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json);
 
-            Console.WriteLine($"[StockWorker] Mesaj Geldi. ProductId: {sagaEvent.ProductId}");
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json, options);
+            
+            Console.WriteLine($"[StockWorker] Mesaj Geldi. Items: {sagaEvent.Items}");
 
             using var scope = _serviceProvider.CreateScope();
             var stockService = scope.ServiceProvider.GetRequiredService<StockService>();
@@ -45,25 +47,22 @@ public class StockWorker : BackgroundService
                 if (sagaEvent.IsCompensating)
                 {
                     // --- ROLLBACK (İADE) ---
-                    await stockService.ReleaseStockAsync(sagaEvent.ProductId, sagaEvent.Quantity);
+                    await stockService.ReleaseStockAsync(sagaEvent.Items);
                     sagaEvent.CurrentState = OrderState.Created;
                 }
                 else
                 {
-                    // --- STOK DÜŞME ---
-                    bool result = await stockService.ReserveStockAsync(sagaEvent.ProductId, sagaEvent.Quantity);
+                    bool result = await stockService.ReserveStockAsync(sagaEvent.Items);
 
                     if (result)
                     {
-                        sagaEvent.CurrentState = OrderState.StockReserved; // Durum güncellendi
+                        sagaEvent.CurrentState = OrderState.StockReserved;
                         sagaEvent.IsSuccess = true;
-                        Console.WriteLine("[StockWorker] Stok Başarıyla Ayrıldı.");
                     }
                     else
                     {
                         sagaEvent.IsSuccess = false;
-                        sagaEvent.ErrorMessage = "Stok Yetersiz";
-                        Console.WriteLine("[StockWorker] HATA: Stok Yetersiz.");
+                        sagaEvent.ErrorMessage = "Stok Yetersiz (Bazı ürünler eksik)";
                     }
                 }
             }

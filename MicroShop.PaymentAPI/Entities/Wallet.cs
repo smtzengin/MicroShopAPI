@@ -1,6 +1,6 @@
 ﻿using MicroShop.Shared.Models;
 
-namespace MicroShop.PaymentAPI.Data;
+namespace MicroShop.PaymentAPI.Entities;
 
 public class Wallet : BaseEntity
 {

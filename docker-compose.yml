@@ -1,77 +1,105 @@
 ﻿version: '3.8'
 
 services:
-  # 1. Sipariş Veritabanı
+  #Identity Veritabanı
+  sql-identity:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shop-sql-identity
+    restart: always
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=StrongPass123!
+    ports:
+      - "1436:1433" # Port 1436
+    volumes:
+      - ./docker-data/sql-identity:/var/opt/mssql
+    networks:
+      - shop-net
+  #  Sipariş Veritabanı
   sql-order:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-order
+    restart: always
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=StrongPass123!
     ports:
-      - "1433:1433" # Default Port
+      - "1433:1433"
+    volumes:
+      - ./docker-data/sql-order:/var/opt/mssql 
     networks:
       - shop-net
 
-  # 2. Stok Veritabanı
+  #  Stok Veritabanı
   sql-stock:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-stock
+    restart: always
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=StrongPass123!
     ports:
-      - "1434:1433" # Port 1434
+      - "1434:1433"
+    volumes:
+      - ./docker-data/sql-stock:/var/opt/mssql 
     networks:
       - shop-net
 
-  # 3. Ödeme Veritabanı
+  #  Ödeme Veritabanı
   sql-payment:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-payment
+    restart: always
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=StrongPass123!
     ports:
-      - "1435:1433" # Port 1435
+      - "1435:1433"
+    volumes:
+      - ./docker-data/sql-payment:/var/opt/mssql
     networks:
       - shop-net
 
-  # RabbitMQ
+  #  RabbitMQ
   rabbitmq:
     image: rabbitmq:3-management
     container_name: shop-rabbitmq
+    restart: always
     ports:
       - "5672:5672"
       - "15672:15672"
+    volumes:
+      - ./docker-data/rabbitmq:/var/lib/rabbitmq 
     networks:
       - shop-net
 
- 
-   # Log Veritabanı
-
+  #  Log Veritabanı (Elasticsearch)
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
     container_name: shop-elastic
+    restart: always
     environment:
       - node.name=shop-elastic
       - cluster.name=es-docker-cluster
       - discovery.type=single-node
       - bootstrap.memory_lock=true
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m" # RAM kullanımını sınırlar
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:
         soft: -1
         hard: -1
     ports:
       - "9200:9200"
+    volumes:
+      - ./docker-data/elastic:/usr/share/elasticsearch/data
     networks:
       - shop-net
 
-  # Log İzleme Ekranı
+  #  Log İzleme (Kibana)
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.9
     container_name: shop-kibana
+    restart: always
     ports:
       - "5601:5601"
     environment:
@@ -81,6 +109,18 @@ services:
       - shop-net
     depends_on:
       - elasticsearch
+
+  #  Redis 
+  redis:
+    image: redis:alpine
+    container_name: shop-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./docker-data/redis:/data
+    networks:
+      - shop-net
 
 networks:
   shop-net:

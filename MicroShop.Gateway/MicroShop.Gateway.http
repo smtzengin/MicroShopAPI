@@ -1,0 +1,6 @@
+@MicroShop.Gateway_HostAddress = http://localhost:5078
+
+GET {{MicroShop.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

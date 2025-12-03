@@ -1,5 +1,6 @@
 ﻿using MicroShop.OrderAPI.Dtos;
 using MicroShop.OrderAPI.Entities;
+using MicroShop.OrderAPI.Models;
 using MicroShop.OrderAPI.Services;
 using MicroShop.Shared.Interfaces;
 using MicroShop.Shared.Models;
@@ -26,28 +27,61 @@ public class OrderController : ControllerBase
         var newOrder = new Order
         {
             Id = Guid.NewGuid(),
-            UserId = dto.UserId,
-            ProductId = dto.ProductId,
-            Quantity = dto.Quantity,
-            TotalPrice = dto.Price,
+            BuyerId = dto.UserId, // UserId -> BuyerId (Guid)
             Status = OrderState.Created,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.UtcNow,
+            CouponCode = dto.CouponCode,
+
+            // Adres Eşlemesi
+            ShippingAddress = new Address
+            {
+                Line = dto.Address.Line,
+                City = dto.Address.City,
+                District = dto.Address.District,
+                ZipCode = dto.Address.ZipCode
+            }
         };
 
+        // 2. Ürünleri Ekle ve Toplam Tutar Hesapla
+        foreach (var item in dto.Items)
+        {
+            newOrder.Items.Add(new OrderItem
+            {
+                ProductId = item.ProductId,
+                ProductName = item.ProductName,
+                Price = item.Price,
+                Quantity = item.Quantity,
+                OrderId = newOrder.Id,
+
+            });
+        }
+
+        // Toplam tutarı itemlardan hesapla
+        newOrder.TotalPrice = newOrder.Items.Sum(x => x.Price * x.Quantity);
+
+        // 3. Veritabanına Kaydet
         await _uow.Repository<Order>().AddAsync(newOrder);
         await _uow.SaveChangesAsync();
 
-
+        // 4. SAGA EVENT OLUŞTUR (Kritik Düzeltme Burada!)
         var sagaEvent = new SagaEvent
         {
             OrderId = newOrder.Id,
-            ProductId = newOrder.ProductId,
-            UserId = dto.UserId,
-            Quantity = newOrder.Quantity,
+            UserId = newOrder.BuyerId,
             TotalPrice = newOrder.TotalPrice,
-            CurrentState = OrderState.Created
+            CurrentState = OrderState.Created,
+            CouponCode = dto.CouponCode,
+
+            // Listeyi SagaEvent formatına çeviriyoruz
+            Items = newOrder.Items.Select(x => new SagaOrderItem
+            {
+                ProductId = x.ProductId,
+                Quantity = x.Quantity
+            }).ToList()
         };
-        _messageProducer.SendMessage(sagaEvent);
+
+        // RabbitMQ'ya gönder
+        _messageProducer.SendMessage(sagaEvent, "queue.stock");
 
         return Ok(new { OrderId = newOrder.Id });
     }

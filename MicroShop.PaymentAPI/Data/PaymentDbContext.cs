@@ -11,6 +11,7 @@ public class PaymentDbContext : DbContext
 
     public DbSet<PaymentLog> PaymentLogs { get; set; }
     public DbSet<Wallet> Wallets { get; set; }
+    public DbSet<Coupon> Coupons { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -20,6 +21,8 @@ public class PaymentDbContext : DbContext
             .HasPrecision(18, 2);
 
         modelBuilder.Entity<Wallet>().Property(w => w.Balance).HasPrecision(18, 2);
+
+        modelBuilder.Entity<Coupon>().Property(c => c.DiscountAmount).HasPrecision(18, 2);
 
         base.OnModelCreating(modelBuilder);
     }

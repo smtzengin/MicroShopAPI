@@ -1,4 +1,5 @@
 ﻿using MicroShop.OrderAPI.Entities;
+using MicroShop.OrderAPI.Models;
 using MicroShop.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,13 +15,26 @@ public class OrderDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Order>()
-             .Property(o => o.TotalPrice)
-             .HasPrecision(18, 2);
+        // 1. Para Hassasiyeti
+        modelBuilder.Entity<Order>().Property(o => o.TotalPrice).HasPrecision(18, 2);
+        modelBuilder.Entity<OrderItem>().Property(oi => oi.Price).HasPrecision(18, 2);
 
+        // 2. Adres (Owned Entity) - Order tablosuna sütun olarak eklenir
+        modelBuilder.Entity<Order>().OwnsOne(o => o.ShippingAddress, a =>
+        {
+            a.Property(p => p.Line).HasColumnName("AddressLine");
+            a.Property(p => p.City).HasColumnName("AddressCity");
+            a.Property(p => p.District).HasColumnName("AddressDistrict");
+            a.Property(p => p.ZipCode).HasColumnName("AddressZipCode");
+        });
+
+        // 3. İlişki (Order -> OrderItems)
+        // Order silinirse itemları da silinsin (Cascade)
         modelBuilder.Entity<Order>()
-            .Property(o => o.Status)
-            .HasConversion<string>();
+            .HasMany(o => o.Items)
+            .WithOne(i => i.Order)
+            .HasForeignKey(i => i.OrderId)
+            .OnDelete(DeleteBehavior.Cascade);
 
         base.OnModelCreating(modelBuilder);
     }

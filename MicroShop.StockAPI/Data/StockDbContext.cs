@@ -10,13 +10,17 @@ public class StockDbContext : DbContext
     public StockDbContext(DbContextOptions<StockDbContext> options) : base(options) { }
 
     public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // 1. Fiyat Hassasiyeti (Zorunlu)
+        modelBuilder.Entity<Product>().Property(p => p.Price).HasPrecision(18, 2);
+
+        // Kategori - Ürün İlişkisi
         modelBuilder.Entity<Product>()
-            .Property(p => p.Price)
-            .HasPrecision(18, 2); // Örn: 15999.99
+            .HasOne(p => p.Category)
+            .WithMany(c => c.Products)
+            .HasForeignKey(p => p.CategoryId);
 
         base.OnModelCreating(modelBuilder);
     }

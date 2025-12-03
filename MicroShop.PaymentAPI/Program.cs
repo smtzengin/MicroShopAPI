@@ -22,6 +22,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(sp =>
 // 3. Servisler
 builder.Services.AddScoped<PaymentService>();
 builder.Services.AddHostedService<PaymentWorker>();
+builder.Services.AddHostedService<IdentityWorker>();
 
 builder.Services.AddControllers();
 

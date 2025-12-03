@@ -32,7 +32,9 @@ public class OrderWorker : BackgroundService
         {
             var body = ea.Body.ToArray();
             var json = Encoding.UTF8.GetString(body);
-            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json);
+
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json, options););
 
             using var scope = _serviceProvider.CreateScope();
             var uow = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();

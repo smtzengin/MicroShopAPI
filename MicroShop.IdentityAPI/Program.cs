@@ -1,0 +1,58 @@
+using MicroShop.IdentityAPI.Data;
+using MicroShop.IdentityAPI.Entities;
+using MicroShop.IdentityAPI.Services;
+using MicroShop.Shared.Extensions;
+using MicroShop.Shared.Interfaces;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+//  Loglama
+builder.AddCustomLogging("IdentityAPI");
+
+// Veritabaný
+builder.Services.AddDbContext<AppIdentityDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddSingleton<IMessageProducer, RabbitMQProducer>();
+
+// Identity Core Ayarlarý
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequiredLength = 4;
+
+    options.User.RequireUniqueEmail = true;
+})
+.AddEntityFrameworkStores<AppIdentityDbContext>()
+.AddDefaultTokenProviders();
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+    context.Database.Migrate();
+}
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseAuthentication(); 
+app.UseAuthorization();  
+
+app.MapControllers();
+
+app.Run();

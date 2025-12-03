@@ -1,0 +1,6 @@
+@MicroShop.BasketAPI_HostAddress = http://localhost:5030
+
+GET {{MicroShop.BasketAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

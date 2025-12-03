@@ -13,6 +13,10 @@
       {
         "Path": "MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "MicroShop.Gateway\\MicroShop.Gateway.csproj",
+        "Action": "Start"
       }
     ]
   }

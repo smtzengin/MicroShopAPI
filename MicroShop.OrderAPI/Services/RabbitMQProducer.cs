@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using MicroShop.Shared.Interfaces;
+using RabbitMQ.Client;
 using System.Text;
 using System.Text.Json;
 
@@ -17,14 +18,17 @@ public class RabbitMQProducer : IMessageProducer
         _connection = _factory.CreateConnection();
         _channel = _connection.CreateModel();
 
-        _channel.QueueDeclare(queue: "queue.stock", durable: false, exclusive: false, autoDelete: false, arguments: null);
     }
 
-    public void SendMessage<T>(T message)
+    public void SendMessage<T>(T message, string queueName = "queue.stock")   
     {
+
+        _channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+
         var json = JsonSerializer.Serialize(message);
         var body = Encoding.UTF8.GetBytes(json);
 
-        _channel.BasicPublish(exchange: "", routingKey: "queue.stock", basicProperties: null, body: body);
+        _channel.BasicPublish(exchange: "", routingKey: queueName, basicProperties: null, body: body);
     }
+
 }
