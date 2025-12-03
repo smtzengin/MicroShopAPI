@@ -12,4 +12,7 @@ public class ProductFilterParams
 
     public decimal? MinPrice { get; set; }
     public decimal? MaxPrice { get; set; }
+
+    public Guid? SellerId { get; set; } 
+    public bool OnlyApproved { get; set; } = true; 
 }

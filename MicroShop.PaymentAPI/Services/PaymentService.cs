@@ -1,5 +1,6 @@
 ﻿using MicroShop.PaymentAPI.Entities;
 using MicroShop.Shared.Interfaces;
+using MicroShop.Shared.Models;
 
 namespace MicroShop.PaymentAPI.Services;
 
@@ -12,64 +13,107 @@ public class PaymentService
         _uow = uow;
     }
 
-    public async Task<bool> ProcessPaymentAsync(Guid orderId, Guid userId, decimal amount, string? couponCode)
+    public async Task<bool> ProcessPaymentAsync(Guid orderId, Guid userId, decimal amount, string? couponCode, PaymentType paymentType, CreditCardInfo? cardInfo)
     {
-        var wallet = await _uow.Repository<Wallet>().GetAllAsync(); // Doğrusu GetByUserId ama generic repo ile böyle
-        var userWallet = wallet.FirstOrDefault(w => w.UserId == userId);
-
-        if (userWallet == null)
-        {
-            await LogTransaction(orderId, amount, "Fail", "Müşteri Bulunamadı");
-            return false;
-        }
-
-        // 2. KUPON KONTROLÜ (YENİ MANTIK)
+        // ---------------------------------------------------------------------
+        // ADIM 1: KUPON VE İNDİRİM HESAPLAMA 
+        // ---------------------------------------------------------------------
         decimal finalAmount = amount;
         string appliedCoupon = "Yok";
 
         if (!string.IsNullOrEmpty(couponCode))
         {
+            // Not: Generic Repository kullandığımız için GetAll çekiyoruz. 
+            // Gerçek senaryoda GetByCode gibi özel metot olmalı.
             var coupons = await _uow.Repository<Coupon>().GetAllAsync();
             var coupon = coupons.FirstOrDefault(c => c.Code == couponCode && c.IsActive);
 
             if (coupon != null)
             {
-                // İndirimi uygula (Tutar eksiye düşmesin diye Math.Max)
+                // İndirimi uygula (Tutar eksiye düşmesin diye kontrol)
                 finalAmount = Math.Max(0, amount - coupon.DiscountAmount);
                 appliedCoupon = $"{coupon.Code} ({coupon.DiscountAmount} TL İndirim)";
-                Console.WriteLine($"[Payment] Kupon Uygulandı! Eski: {amount}, Yeni: {finalAmount}");
+
+                Console.WriteLine($"[Payment] Kupon Uygulandı! Kod: {coupon.Code}, Eski: {amount}, Yeni: {finalAmount}");
             }
             else
             {
-                // Kupon geçersizse hata verme, sadece uygulama.
-                Console.WriteLine($"[Payment] Geçersiz Kupon: {couponCode}");
+                Console.WriteLine($"[Payment] Geçersiz Kupon Kodu: {couponCode}");
             }
         }
 
-        // 3. Bakiye Kontrolü (İndirimli fiyat üzerinden)
-        if (userWallet.Balance < finalAmount)
+        // ---------------------------------------------------------------------
+        // ADIM 2: ÖDEME YÖNTEMİNE GÖRE İŞLEM
+        // ---------------------------------------------------------------------
+
+        // --- SENARYO A: CÜZDAN İLE ÖDEME ---
+        if (paymentType == PaymentType.Wallet)
         {
-            await LogTransaction(orderId, finalAmount, "Fail", $"Yetersiz Bakiye! (İstenen: {finalAmount})");
-            return false;
+            var wallets = await _uow.Repository<Wallet>().GetAllAsync();
+            var userWallet = wallets.FirstOrDefault(w => w.UserId == userId);
+
+            // Cüzdan kontrolü
+            if (userWallet == null)
+            {
+                await LogTransaction(orderId, amount, "Fail", "Müşteri Cüzdanı Bulunamadı");
+                return false;
+            }
+
+            // Bakiye Kontrolü (İndirimli fiyat üzerinden)
+            if (userWallet.Balance < finalAmount)
+            {
+                await LogTransaction(orderId, finalAmount, "Fail", $"Yetersiz Bakiye (Cüzdan)! (Mevcut: {userWallet.Balance})");
+                return false;
+            }
+
+            // Parayı Çek
+            userWallet.Balance -= finalAmount;
+            await _uow.SaveChangesAsync();
+
+            await LogTransaction(orderId, finalAmount, "Success", $"Cüzdan - Kupon: {appliedCoupon}");
+            Console.WriteLine($"[Payment] Cüzdan Ödemesi Başarılı. Kalan: {userWallet.Balance}");
+            return true;
         }
 
-        // 4. Parayı Çek
-        userWallet.Balance -= finalAmount;
-        await _uow.SaveChangesAsync();
+        // --- SENARYO B: KREDİ KARTI İLE ÖDEME (SİMÜLASYON) ---
+        else if (paymentType == PaymentType.CreditCard)
+        {
+            // Kart bilgisi gelmiş mi?
+            if (cardInfo == null)
+            {
+                await LogTransaction(orderId, finalAmount, "Fail", "Kart Bilgileri Eksik");
+                return false;
+            }
 
-        await LogTransaction(orderId, finalAmount, "Success", $"Kupon: {appliedCoupon}");
-        return true;
+            // Simülasyon Kuralı: Kart numarası "00" ile bitiyorsa REDDET (Limit Yetersiz vb.)
+            if (cardInfo.CardNumber.EndsWith("00"))
+            {
+                await LogTransaction(orderId, finalAmount, "Fail", "Kart Reddedildi (Limit/Banka Hatası)");
+                Console.WriteLine("[Payment] Sanal POS: Kart Reddedildi.");
+                return false;
+            }
+
+
+            await LogTransaction(orderId, finalAmount, "Success", $"Kredi Kartı - Kupon: {appliedCoupon}");
+            Console.WriteLine($"[Payment] Sanal POS: {finalAmount} TL başarıyla çekildi.");
+            return true;
+        }
+
+        return false; // Bilinmeyen ödeme tipi
     }
+
+    // İşlem Loglama Yardımcısı
     private async Task LogTransaction(Guid orderId, decimal amount, string status, string? error)
     {
         var log = new PaymentLog
         {
             OrderId = orderId,
             Amount = amount,
-            TransactionId = Guid.NewGuid().ToString(),
+            TransactionId = Guid.NewGuid().ToString(), 
             Status = status,
             ErrorMessage = error
         };
+
         await _uow.Repository<PaymentLog>().AddAsync(log);
         await _uow.SaveChangesAsync();
     }

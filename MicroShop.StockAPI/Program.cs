@@ -21,9 +21,11 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(sp =>
 
 // 3. Servisler
 builder.Services.AddScoped<StockService>();
+builder.Services.AddSingleton<IMessageProducer, RabbitMQProducer>();
 
 // 4. Worker (Arkaplan dinleyicisi)
 builder.Services.AddHostedService<StockWorker>();
+builder.Services.AddHostedService<ApprovalWorker>();
 
 // 5. CORS (Angular İçin)
 builder.Services.AddCors(options =>

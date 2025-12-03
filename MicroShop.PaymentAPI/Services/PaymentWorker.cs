@@ -51,7 +51,7 @@ public class PaymentWorker : BackgroundService
                 // Ödemenin "Rollback"i genelde para iadesidir ama burada işlem başarısız olursa zaten para çekilmez.
                 if (!sagaEvent.IsCompensating)
                 {
-                    bool success = await paymentService.ProcessPaymentAsync(sagaEvent.OrderId,sagaEvent.UserId,  sagaEvent.TotalPrice, sagaEvent.CouponCode);
+                    bool success = await paymentService.ProcessPaymentAsync(sagaEvent.OrderId,sagaEvent.UserId,  sagaEvent.TotalPrice, sagaEvent.CouponCode,sagaEvent.PaymentType,sagaEvent.CardInfo);
 
                     if (success)
                     {

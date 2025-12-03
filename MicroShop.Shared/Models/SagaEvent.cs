@@ -14,6 +14,8 @@ public class SagaEvent
     public bool IsCompensating { get; set; }
 
     public string? CouponCode { get; set; }
+    public PaymentType PaymentType { get; set; } // Seçilen yöntem
+    public CreditCardInfo? CardInfo { get; set; } // Kart bilgileri (Opsiyonel)
 }
 
 public class SagaOrderItem

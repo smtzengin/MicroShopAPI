@@ -42,6 +42,11 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
     context.Database.Migrate();
+
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    IdentityDbSeed.SeedAsync(userManager, roleManager).Wait();
 }
 
 if (app.Environment.IsDevelopment())

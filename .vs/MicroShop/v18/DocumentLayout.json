@@ -3,16 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\services\\paymentworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\services\\paymentworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\creditcarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\creditcarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.shared\\models\\sagaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\sagaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.shared\\models\\creditcardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\creditcardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.shared\\models\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE7D14A-94C2-449A-B86E-FE74DD01D6A7}|MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.basketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE7D14A-94C2-449A-B86E-FE74DD01D6A7}|MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj|solutionrelative:microshop.basketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\services\\approvalworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\approvalworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.shared\\models\\productcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\productcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\models\\productfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\models\\productfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\entities\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\entities\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.identityapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|solutionrelative:microshop.identityapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.identityapi\\data\\identitydbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|solutionrelative:microshop.identityapi\\data\\identitydbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.paymentapi\\entities\\paymentlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,56 +119,16 @@
       "RelativeMoniker": "D:0:0:{DB20B4CE-E3A1-4696-8685-85E52D6D1E25}|MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj|solutionrelative:microshop.paymentapi\\data\\paymentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\createorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.shared\\models\\sagaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57F995D4-62ED-4F5C-95BA-282BB477E08B}|MicroShop.Shared\\MicroShop.Shared.csproj|solutionrelative:microshop.shared\\models\\sagaevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\services\\stockworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\stockworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\services\\orderworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\dtos\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\dtos\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\data\\orderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|solutionrelative:microshop.orderapi\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\models\\productfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\models\\productfilterparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\data\\stockdbseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\data\\stockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\data\\stockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|solutionrelative:microshop.stockapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D2DDAD-A084-4E6F-83DF-2239D65BD09E}|MicroShop.StockAPI\\MicroShop.StockAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.stockapi\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{32A57123-7969-4BBD-97CB-83F398095E2A}|MicroShop.Gateway\\MicroShop.Gateway.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{32A57123-7969-4BBD-97CB-83F398095E2A}|MicroShop.Gateway\\MicroShop.Gateway.csproj|solutionrelative:microshop.gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE7D14A-94C2-449A-B86E-FE74DD01D6A7}|MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.basketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE7D14A-94C2-449A-B86E-FE74DD01D6A7}|MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj|solutionrelative:microshop.basketapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEE7D14A-94C2-449A-B86E-FE74DD01D6A7}|MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.basketapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -149,10 +189,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.identityapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|solutionrelative:microshop.identityapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.identityapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91FB97B7-BBA0-47E6-8B48-7C0B733B2C04}|MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj|solutionrelative:microshop.identityapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78A8C367-CC5D-44B4-9A23-BF7C7B580219}|MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj|c:\\users\\ie_sametz\\desktop\\microshopapi\\microshop.orderapi\\microshop.orderapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -206,203 +242,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentWorker.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDUAAACbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:47:11.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentLog.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:46:39.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PaymentDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:46:01.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Coupon.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Coupon.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\Coupon.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Coupon.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\Coupon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:45:46.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Entities\\Order.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Entities\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:44:53.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderWorker.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCEAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:37:53.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StockWorker.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockWorker.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockWorker.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwCEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:34:41.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PaymentDbSeed.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:34:33.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateOrderdto.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:33:55.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SagaEvent.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\SagaEvent.cs",
-              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\SagaEvent.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\SagaEvent.cs",
-              "RelativeToolTip": "MicroShop.Shared\\Models\\SagaEvent.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:31:38.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvw4AAABtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:13:53.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OrderItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:34:14.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Wallet.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Wallet.cs",
-              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\Wallet.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Wallet.cs",
-              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\Wallet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:05:35.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AddressDto.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:34:05.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OrderDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADwvyQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:31:21.723Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -417,119 +258,314 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreditCardDto.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreditCardDto.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\CreditCardDto.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreditCardDto.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\CreditCardDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:02:44.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreditCardInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\CreditCardInfo.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\CreditCardInfo.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\CreditCardInfo.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\CreditCardInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:02:10.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SagaEvent.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\SagaEvent.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\SagaEvent.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\SagaEvent.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\SagaEvent.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBEAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:31:38.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\OrderItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:34:14.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Order.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:44:53.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Data\\OrderDbContext.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvyQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:31:21.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Controller\\OrderController.cs",
               "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Controller\\OrderController.cs",
               "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Controller\\OrderController.cs",
               "RelativeToolTip": "MicroShop.OrderAPI\\Controller\\OrderController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwEgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwEkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T13:02:59.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Address.cs",
-              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Entities\\Address.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Address.cs",
-              "RelativeToolTip": "MicroShop.OrderAPI\\Entities\\Address.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAADwv24AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:28:58.524Z",
+              "WhenOpened": "2025-12-03T13:13:53.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StockService.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockService.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PaymentWorker.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Services\\PaymentWorker.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDUAAADEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:16:29.123Z",
+              "WhenOpened": "2025-12-03T13:47:11.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
+              "Title": "PaymentType.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\PaymentType.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\PaymentType.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\PaymentType.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\PaymentType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:01:58.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "StockController.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "MicroShop.StockAPI\\Controllers\\StockController.cs",
               "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Controllers\\StockController.cs",
               "RelativeToolTip": "MicroShop.StockAPI\\Controllers\\StockController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T13:16:51.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "StockDbSeed.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:19:41.286Z",
+              "WhenOpened": "2025-12-03T13:53:03.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\RabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\RabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\RabbitMQProducer.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\RabbitMQProducer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:54:33.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApprovalWorker.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\ApprovalWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\ApprovalWorker.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\ApprovalWorker.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\ApprovalWorker.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:52:47.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateOrderdto.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\CreateOrderdto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:33:55.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\ProductCreatedEvent.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\ProductCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\ProductCreatedEvent.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Models\\ProductCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:52:29.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "StockDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Title": "ProductStatus.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\ProductStatus.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\ProductStatus.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\ProductStatus.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\ProductStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:19:14.747Z",
+              "WhenOpened": "2025-12-03T13:50:53.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "OrderWorker.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Services\\OrderWorker.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADwvzwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:18:10.074Z",
+              "WhenOpened": "2025-12-03T13:37:53.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.BasketAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:10:07.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Category.cs",
-              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Title": "IdentityDbSeed.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Data\\IdentityDbSeed.cs",
+              "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Data\\IdentityDbSeed.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Data\\IdentityDbSeed.cs",
+              "RelativeToolTip": "MicroShop.IdentityAPI\\Data\\IdentityDbSeed.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:18:47.48Z",
+              "WhenOpened": "2025-12-03T13:50:02.431Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
-              "RelativeDocumentMoniker": "MicroShop.Shared\\Data\\Repository.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
-              "RelativeToolTip": "MicroShop.Shared\\Data\\Repository.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAcwC8AAAAyAAAAAAAAAA==",
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Coupon.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\Coupon.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Coupon.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\Coupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:15:55.99Z",
+              "WhenOpened": "2025-12-03T13:45:46.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "StockWorker.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockWorker.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwCEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:34:41.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentDbSeed.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbSeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:34:33.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Product.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:18:10.074Z",
               "EditorCaption": ""
             },
             {
@@ -547,7 +583,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StockService.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Services\\StockService.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Services\\StockService.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Services\\StockService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:16:29.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PaymentDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Data\\PaymentDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:46:01.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "PaymentLog.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\PaymentLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:46:39.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Program.cs",
+              "RelativeToolTip": "MicroShop.IdentityAPI\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T12:51:46.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Wallet.cs",
+              "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Entities\\Wallet.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Entities\\Wallet.cs",
+              "RelativeToolTip": "MicroShop.PaymentAPI\\Entities\\Wallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:05:35.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddressDto.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Dtos\\AddressDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:34:05.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Entities\\Address.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Entities\\Address.cs",
+              "RelativeToolTip": "MicroShop.OrderAPI\\Entities\\Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:28:58.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StockDbSeed.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbSeed.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:19:41.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "StockDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Data\\StockDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:19:14.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "MicroShop.StockAPI\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.StockAPI\\Entities\\Category.cs",
+              "RelativeToolTip": "MicroShop.StockAPI\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:18:47.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
+              "RelativeDocumentMoniker": "MicroShop.Shared\\Data\\Repository.cs",
+              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Data\\Repository.cs",
+              "RelativeToolTip": "MicroShop.Shared\\Data\\Repository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwC8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:15:55.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "PagedResponse.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\PagedResponse.cs",
               "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\PagedResponse.cs",
@@ -560,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "ocelot.json",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Gateway\\ocelot.json",
               "RelativeDocumentMoniker": "MicroShop.Gateway\\ocelot.json",
@@ -573,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 37,
               "Title": "BasketController.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Controllers\\BasketController.cs",
               "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Controllers\\BasketController.cs",
@@ -586,20 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Program.cs",
-              "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Program.cs",
-              "RelativeToolTip": "MicroShop.BasketAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T13:10:07.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\appsettings.json",
               "RelativeDocumentMoniker": "MicroShop.BasketAPI\\appsettings.json",
@@ -612,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 38,
               "Title": "BasketService.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Services\\BasketService.cs",
               "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Services\\BasketService.cs",
@@ -625,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "ShoppingCart.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Models\\ShoppingCart.cs",
               "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Models\\ShoppingCart.cs",
@@ -638,7 +804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "BasketItem.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.BasketAPI\\Models\\BasketItem.cs",
               "RelativeDocumentMoniker": "MicroShop.BasketAPI\\Models\\BasketItem.cs",
@@ -651,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Program.cs",
               "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Program.cs",
@@ -664,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 45,
               "Title": "IdentityWorker.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.PaymentAPI\\Services\\IdentityWorker.cs",
               "RelativeDocumentMoniker": "MicroShop.PaymentAPI\\Services\\IdentityWorker.cs",
@@ -677,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 48,
               "Title": "RabbitMQProducer.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Services\\RabbitMQProducer.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Services\\RabbitMQProducer.cs",
@@ -690,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 43,
               "Title": "RabbitMQProducer.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
               "RelativeDocumentMoniker": "MicroShop.OrderAPI\\Services\\RabbitMQProducer.cs",
@@ -703,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 49,
               "Title": "IMessageProducer.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Interfaces\\IMessageProducer.cs",
               "RelativeDocumentMoniker": "MicroShop.Shared\\Interfaces\\IMessageProducer.cs",
@@ -716,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 50,
               "Title": "UserCreatedEvent.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.Shared\\Models\\UserCreatedEvent.cs",
               "RelativeDocumentMoniker": "MicroShop.Shared\\Models\\UserCreatedEvent.cs",
@@ -729,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 52,
               "Title": "RefreshTokenDto.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Models\\RefreshTokenDto.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Models\\RefreshTokenDto.cs",
@@ -742,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "MicroShop.OrderAPI.csproj",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
               "RelativeDocumentMoniker": "MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
@@ -754,20 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Program.cs",
-              "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Program.cs",
-              "RelativeToolTip": "MicroShop.IdentityAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T12:51:46.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 46,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Services\\AuthService.cs",
@@ -780,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 53,
               "Title": "AuthResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Models\\AuthResponseDto.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Models\\AuthResponseDto.cs",
@@ -793,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Entities\\ApplicationUser.cs",
@@ -806,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 51,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Controllers\\AuthController.cs",
@@ -819,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 55,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Models\\LoginDto.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Models\\LoginDto.cs",
@@ -832,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 56,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\Models\\RegisterDto.cs",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\Models\\RegisterDto.cs",
@@ -845,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 57,
               "Title": "MicroShop.IdentityAPI.csproj",
               "DocumentMoniker": "C:\\Users\\ie_sametz\\Desktop\\MicroShopAPI\\MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj",
               "RelativeDocumentMoniker": "MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj",

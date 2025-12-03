@@ -15,6 +15,28 @@ public class StockService
         _uow = uow;
     }
 
+    public async Task<Product> CreateProductAsync(Product product)
+    {
+        product.Status = ProductStatus.Pending; // Başlangıç durumu
+        product.CreatedAt = DateTime.UtcNow;
+
+        await _uow.Repository<Product>().AddAsync(product);
+        await _uow.SaveChangesAsync();
+
+        return product;
+    }
+
+    public async Task ApproveProductAsync(Guid productId)
+    {
+        var product = await _uow.Repository<Product>().GetByIdAsync(productId);
+        if (product != null)
+        {
+            product.Status = ProductStatus.Approved;
+            await _uow.SaveChangesAsync();
+        }
+    }
+
+
     public async Task<bool> ReserveStockAsync(List<SagaOrderItem> items)
     {
 
@@ -56,10 +78,12 @@ public class StockService
     public async Task<PagedResponse<Product>> GetProductsAsync(ProductFilterParams filter)
     {
         Expression<Func<Product, bool>> predicate = p =>
-        (string.IsNullOrEmpty(filter.Search) || p.Name.Contains(filter.Search)) &&
-        (!filter.CategoryId.HasValue || p.CategoryId == filter.CategoryId) &&
-        (!filter.MinPrice.HasValue || p.Price >= filter.MinPrice) &&
-        (!filter.MaxPrice.HasValue || p.Price <= filter.MaxPrice);
+            (string.IsNullOrEmpty(filter.Search) || p.Name.Contains(filter.Search)) &&
+            (!filter.CategoryId.HasValue || p.CategoryId == filter.CategoryId) &&
+            (!filter.MinPrice.HasValue || p.Price >= filter.MinPrice) &&
+            (!filter.MaxPrice.HasValue || p.Price <= filter.MaxPrice) &&
+            (!filter.SellerId.HasValue || p.SellerId == filter.SellerId) &&
+            (!filter.OnlyApproved || p.Status == ProductStatus.Approved);
 
         var result = await _uow.Repository<Product>()
          .GetAllPagedAsync(filter.PageNumber, filter.PageSize, predicate);

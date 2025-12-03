@@ -12,4 +12,7 @@ public class Product : BaseEntity
 
     public int CategoryId { get; set; } // YENİ (Foreign Key)
     public Category Category { get; set; } // Navigation Property
+
+    public Guid SellerId { get; set; } // Hangi satıcı ekledi?
+    public ProductStatus Status { get; set; } = ProductStatus.Pending;
 }

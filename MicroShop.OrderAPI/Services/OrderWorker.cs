@@ -34,7 +34,7 @@ public class OrderWorker : BackgroundService
             var json = Encoding.UTF8.GetString(body);
 
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json, options););
+            var sagaEvent = JsonSerializer.Deserialize<SagaEvent>(json, options);
 
             using var scope = _serviceProvider.CreateScope();
             var uow = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
@@ -48,24 +48,30 @@ public class OrderWorker : BackgroundService
             // --- SENARYO 1: HATA VE ROLLBACK ---
             if (!sagaEvent.IsSuccess)
             {
+                //  Önce veritabanına "Hata Aldım" diye yaz
                 order.Status = OrderState.Failed;
-                order.FailReason = sagaEvent.ErrorMessage;
+                order.FailReason = $"Hata Aşaması: {sagaEvent.CurrentState} - Mesaj: {sagaEvent.ErrorMessage}";
                 await uow.SaveChangesAsync();
 
-                Console.WriteLine($"[Orchestrator] HATA ALINDI! Rollback Başlatılıyor... Sebep: {sagaEvent.ErrorMessage}");
+                Console.WriteLine($"[Orchestrator] HATA TESPİT EDİLDİ: {order.FailReason}");
 
-                // Hata Payment'tan geldiyse Stoğu geri ver
-                // (StockReserved durumundayken patladıysa, stok düşülmüş demektir)
-                if (sagaEvent.CurrentState == OrderState.PaymentTaken || sagaEvent.CurrentState == OrderState.StockReserved)
+                // Hangi aşamada patladık? Geriye doğru telafi (Compensate) zinciri
+                switch (sagaEvent.CurrentState)
                 {
-                    sagaEvent.IsCompensating = true;
-                    // Stoğu geri alması için Stock kuyruğuna atıyoruz
-                    // (Sadece kuyruk adını değiştirip publish ediyoruz)
-                    // Şimdilik manuel publish edelim veya Producer'ı güncelleyelim.
-       
-                    var rollbackJson = JsonSerializer.Serialize(sagaEvent);
-                    var rollbackBody = Encoding.UTF8.GetBytes(rollbackJson);
-                    _channel.BasicPublish("", "queue.stock", null, rollbackBody);
+                    case OrderState.PaymentTaken:
+                    case OrderState.StockReserved:
+                        // "Ödeme Alınırken" veya "Stok Ayrıldıktan Sonra" hata geldiyse
+                        // Kesinlikle Stok düşülmüştür. STOK İADESİ BAŞLAT.
+
+                        Console.WriteLine("[Orchestrator] Kritik Hata: Stok İadesi (Compensate) Başlatılıyor...");
+
+                        sagaEvent.IsCompensating = true;
+                        messageProducer.SendMessage(sagaEvent, "queue.stock");
+                        break;
+
+                    case OrderState.Created:
+                        Console.WriteLine("[Orchestrator] İlk adımda (Stok) hata alındı. Rollback gerekmez. İşlem bitti.");
+                        break;
                 }
                 return;
             }

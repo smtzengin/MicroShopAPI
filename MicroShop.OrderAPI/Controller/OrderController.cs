@@ -31,6 +31,7 @@ public class OrderController : ControllerBase
             Status = OrderState.Created,
             CreatedAt = DateTime.UtcNow,
             CouponCode = dto.CouponCode,
+            PaymentType = dto.PaymentType,
 
             // Adres Eşlemesi
             ShippingAddress = new Address
@@ -71,6 +72,17 @@ public class OrderController : ControllerBase
             TotalPrice = newOrder.TotalPrice,
             CurrentState = OrderState.Created,
             CouponCode = dto.CouponCode,
+            PaymentType = dto.PaymentType,
+
+            CardInfo = dto.PaymentType == PaymentType.CreditCard && dto.CardInfo != null
+                ? new CreditCardInfo
+                {
+                    CardNumber = dto.CardInfo.CardNumber,
+                    HolderName = dto.CardInfo.HolderName,
+                    CVV = dto.CardInfo.CVV,
+                    Expiration = dto.CardInfo.Expiration
+                }
+                : null,
 
             // Listeyi SagaEvent formatına çeviriyoruz
             Items = newOrder.Items.Select(x => new SagaOrderItem
