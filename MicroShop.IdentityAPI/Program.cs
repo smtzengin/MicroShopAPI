@@ -1,4 +1,4 @@
-using MicroShop.IdentityAPI.Data;
+﻿using MicroShop.IdentityAPI.Data;
 using MicroShop.IdentityAPI.Entities;
 using MicroShop.IdentityAPI.Services;
 using MicroShop.Shared.Extensions;
@@ -10,15 +10,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 //  Loglama
 builder.AddCustomLogging("IdentityAPI");
+builder.AddCustomJwtAuthentication();
 
-// Veritaban�
+// Veritabanı
 builder.Services.AddDbContext<AppIdentityDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+    sqlOptions =>
+    {
+        sqlOptions.EnableRetryOnFailure(
+            maxRetryCount: 5, // 5 kere dene
+            maxRetryDelay: TimeSpan.FromSeconds(10), // Her deneme arası 10 sn bekle
+            errorNumbersToAdd: null);
+    }));
 
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddSingleton<IMessageProducer, RabbitMQProducer>();
 
-// Identity Core Ayarlar�
+// Identity Core Ayarları
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = false;
@@ -54,6 +62,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseAuthentication(); 
 app.UseAuthorization();  

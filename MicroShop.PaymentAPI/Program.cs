@@ -7,31 +7,33 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddCustomLogging("PaymentAPI");
+builder.AddCustomJwtAuthentication();
 
-// 1. DbContext
 builder.Services.AddDbContext<PaymentDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 2. UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(sp =>
 {
     var context = sp.GetRequiredService<PaymentDbContext>();
     return new UnitOfWork(context);
 });
 
-// 3. Servisler
 builder.Services.AddScoped<PaymentService>();
 builder.Services.AddHostedService<PaymentWorker>();
 builder.Services.AddHostedService<IdentityWorker>();
 
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseAuthorization();
+app.UseAuthentication();
 app.MapControllers();
 
-// Otomatik Migration
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<PaymentDbContext>();

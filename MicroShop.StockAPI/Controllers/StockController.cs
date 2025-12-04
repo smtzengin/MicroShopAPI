@@ -3,6 +3,7 @@ using MicroShop.Shared.Models;
 using MicroShop.StockAPI.Entities;
 using MicroShop.StockAPI.Models;
 using MicroShop.StockAPI.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicroShop.StockAPI.Controllers;
@@ -37,7 +38,7 @@ public class StockController(IUnitOfWork uow, StockService stockService, IMessag
         var categories = await _uow.Repository<Category>().GetAllAsync();
         return Ok(categories);
     }
-
+    [Authorize]
     [HttpPost]
     public async Task<IActionResult> CreateProduct([FromBody] Product product)
     {

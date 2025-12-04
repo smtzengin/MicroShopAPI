@@ -4,10 +4,12 @@ using MicroShop.OrderAPI.Models;
 using MicroShop.OrderAPI.Services;
 using MicroShop.Shared.Interfaces;
 using MicroShop.Shared.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicroShop.OrderAPI.Controller;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class OrderController : ControllerBase
@@ -20,6 +22,7 @@ public class OrderController : ControllerBase
         _uow = uow;
         _messageProducer = messageProducer;
     }
+
 
     [HttpPost]
     public async Task<IActionResult> CreateOrder([FromBody] CreateOrderDto dto)

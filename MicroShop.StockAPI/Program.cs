@@ -7,27 +7,23 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddCustomLogging("StockAPI");
+builder.AddCustomJwtAuthentication();
 
-// 1. Veritabanı Bağlantısı
 builder.Services.AddDbContext<StockDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 2. UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(sp =>
 {
     var context = sp.GetRequiredService<StockDbContext>();
     return new UnitOfWork(context);
 });
 
-// 3. Servisler
 builder.Services.AddScoped<StockService>();
 builder.Services.AddSingleton<IMessageProducer, RabbitMQProducer>();
 
-// 4. Worker (Arkaplan dinleyicisi)
 builder.Services.AddHostedService<StockWorker>();
 builder.Services.AddHostedService<ApprovalWorker>();
 
-// 5. CORS (Angular İçin)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
@@ -38,22 +34,23 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); // Eğer Swashbuckle eklediysen
+builder.Services.AddSwaggerGen(); 
 
 var app = builder.Build();
 
-// Seed Data
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<StockDbContext>();
     context.Database.Migrate();
-    StockDbSeed.Seed(context); // Verileri bas
+    StockDbSeed.Seed(context);
 }
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseCors("AllowAngular");
+app.UseAuthorization();
+app.UseAuthentication();
 app.MapControllers();
 
 app.Run();

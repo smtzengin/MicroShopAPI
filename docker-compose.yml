@@ -1,7 +1,7 @@
 ﻿version: '3.8'
 
 services:
-  #Identity Veritabanı
+  # 1. Identity Veritabanı
   sql-identity:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-identity
@@ -10,12 +10,13 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=StrongPass123!
     ports:
-      - "1436:1433" # Port 1436
+      - "1436:1433"
     volumes:
-      - ./docker-data/sql-identity:/var/opt/mssql
+      - sql_identity_data:/var/opt/mssql # Named Volume
     networks:
       - shop-net
-  #  Sipariş Veritabanı
+
+  # 2. Sipariş Veritabanı
   sql-order:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-order
@@ -26,11 +27,11 @@ services:
     ports:
       - "1433:1433"
     volumes:
-      - ./docker-data/sql-order:/var/opt/mssql 
+      - sql_order_data:/var/opt/mssql # Named Volume
     networks:
       - shop-net
 
-  #  Stok Veritabanı
+  # 3. Stok Veritabanı
   sql-stock:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-stock
@@ -41,11 +42,11 @@ services:
     ports:
       - "1434:1433"
     volumes:
-      - ./docker-data/sql-stock:/var/opt/mssql 
+      - sql_stock_data:/var/opt/mssql # Named Volume
     networks:
       - shop-net
 
-  #  Ödeme Veritabanı
+  # 4. Ödeme Veritabanı
   sql-payment:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shop-sql-payment
@@ -56,11 +57,11 @@ services:
     ports:
       - "1435:1433"
     volumes:
-      - ./docker-data/sql-payment:/var/opt/mssql
+      - sql_payment_data:/var/opt/mssql # Named Volume
     networks:
       - shop-net
 
-  #  RabbitMQ
+  # 5. RabbitMQ
   rabbitmq:
     image: rabbitmq:3-management
     container_name: shop-rabbitmq
@@ -69,11 +70,11 @@ services:
       - "5672:5672"
       - "15672:15672"
     volumes:
-      - ./docker-data/rabbitmq:/var/lib/rabbitmq 
+      - rabbitmq_data:/var/lib/rabbitmq # Named Volume
     networks:
       - shop-net
 
-  #  Log Veritabanı (Elasticsearch)
+  # 6. Log Veritabanı (Elasticsearch)
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
     container_name: shop-elastic
@@ -91,11 +92,11 @@ services:
     ports:
       - "9200:9200"
     volumes:
-      - ./docker-data/elastic:/usr/share/elasticsearch/data
+      - elastic_data:/usr/share/elasticsearch/data # Named Volume
     networks:
       - shop-net
 
-  #  Log İzleme (Kibana)
+  # 7. Log İzleme (Kibana)
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.9
     container_name: shop-kibana
@@ -110,7 +111,7 @@ services:
     depends_on:
       - elasticsearch
 
-  #  Redis 
+  # 8. Redis
   redis:
     image: redis:alpine
     container_name: shop-redis
@@ -118,9 +119,20 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - ./docker-data/redis:/data
+      - redis_data:/data # Named Volume
     networks:
       - shop-net
+
+# --- KRİTİK BÖLÜM: Volume Tanımları ---
+# Bu bölüm sayesinde veriler Docker'ın güvenli alanında saklanır.
+volumes:
+  sql_identity_data:
+  sql_order_data:
+  sql_stock_data:
+  sql_payment_data:
+  rabbitmq_data:
+  elastic_data:
+  redis_data:
 
 networks:
   shop-net:

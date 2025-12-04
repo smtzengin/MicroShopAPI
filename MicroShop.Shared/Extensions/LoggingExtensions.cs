@@ -23,7 +23,7 @@ public static class LoggingExtensions
             {
                 // Index formatı küçük harf olmalı. Örn: microshop-orderapi-2025-12
                 IndexFormat = $"microshop-{applicationName.ToLower()}-{DateTime.UtcNow:yyyy-MM}",
-                AutoRegisterTemplate = true, 
+                AutoRegisterTemplate = false, 
                 NumberOfShards = 2,
                 NumberOfReplicas = 1
             })

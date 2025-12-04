@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MicroShop.BasketAPI.Models;
+﻿using MicroShop.BasketAPI.Models;
 using MicroShop.BasketAPI.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MicroShop.BasketAPI.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class BasketController : ControllerBase

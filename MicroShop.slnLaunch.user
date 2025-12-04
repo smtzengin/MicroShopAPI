@@ -4,19 +4,33 @@
     "Projects": [
       {
         "Path": "MicroShop.OrderAPI\\MicroShop.OrderAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
       },
       {
         "Path": "MicroShop.StockAPI\\MicroShop.StockAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
       },
       {
         "Path": "MicroShop.PaymentAPI\\MicroShop.PaymentAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
       },
       {
         "Path": "MicroShop.Gateway\\MicroShop.Gateway.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "MicroShop.IdentityAPI\\MicroShop.IdentityAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "MicroShop.BasketAPI\\MicroShop.BasketAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
       }
     ]
   }

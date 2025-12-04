@@ -1,18 +1,22 @@
-using MicroShop.BasketAPI.Services;
-using MicroShop.Shared.Extensions;
+﻿using MicroShop.BasketAPI.Services;
+using MicroShop.Shared.Extensions; // Shared referansını unutma
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Loglama
+// 1. Loglama (Shared Extension)
 builder.AddCustomLogging("BasketAPI");
 
-// 2. Redis Ba�lant�s�
+// 2. Authentication (JWT - Shared Extension)
+builder.AddCustomJwtAuthentication();
+
+// 3. Redis Cache Entegrasyonu
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    options.InstanceName = "MicroShop_"; 
 });
 
-// 3. Basket Service Kayd�
+// 4. Servis Kaydı
 builder.Services.AddScoped<BasketService>();
 
 builder.Services.AddControllers();
@@ -21,11 +25,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// 5. Middleware Sıralaması
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseAuthentication(); // <-- Giriş kontrolü
+app.UseAuthorization();  // <-- Yetki kontrolü
 
 app.MapControllers();
 
