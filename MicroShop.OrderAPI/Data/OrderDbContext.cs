@@ -12,14 +12,14 @@ public class OrderDbContext : DbContext
     }
 
     public DbSet<Order> Orders { get; set; }
+    public DbSet<OrderItem> OrderItems { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // 1. Para Hassasiyeti
         modelBuilder.Entity<Order>().Property(o => o.TotalPrice).HasPrecision(18, 2);
         modelBuilder.Entity<OrderItem>().Property(oi => oi.Price).HasPrecision(18, 2);
-
-        // 2. Adres (Owned Entity) - Order tablosuna sütun olarak eklenir
+        // 2. Adres (Owned Entity) 
         modelBuilder.Entity<Order>().OwnsOne(o => o.ShippingAddress, a =>
         {
             a.Property(p => p.Line).HasColumnName("AddressLine");
@@ -29,7 +29,6 @@ public class OrderDbContext : DbContext
         });
 
         // 3. İlişki (Order -> OrderItems)
-        // Order silinirse itemları da silinsin (Cascade)
         modelBuilder.Entity<Order>()
             .HasMany(o => o.Items)
             .WithOne(i => i.Order)

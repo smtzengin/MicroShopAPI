@@ -22,7 +22,7 @@ public class BasketService
             : JsonSerializer.Deserialize<ShoppingCart>(basketJson);
     }
 
-    // 2. Sepete Ürün Ekle (AKILLI MANTIK)
+    // 2. Sepete Ürün Ekle 
     public async Task<ShoppingCart> AddItemToBasketAsync(Guid userId, BasketItem newItem)
     {
         // Önce mevcut sepeti çek

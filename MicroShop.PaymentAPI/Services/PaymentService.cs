@@ -15,16 +15,13 @@ public class PaymentService
 
     public async Task<bool> ProcessPaymentAsync(Guid orderId, Guid userId, decimal amount, string? couponCode, PaymentType paymentType, CreditCardInfo? cardInfo)
     {
-        // ---------------------------------------------------------------------
-        // ADIM 1: KUPON VE İNDİRİM HESAPLAMA 
-        // ---------------------------------------------------------------------
+      
         decimal finalAmount = amount;
         string appliedCoupon = "Yok";
 
         if (!string.IsNullOrEmpty(couponCode))
         {
-            // Not: Generic Repository kullandığımız için GetAll çekiyoruz. 
-            // Gerçek senaryoda GetByCode gibi özel metot olmalı.
+
             var coupons = await _uow.Repository<Coupon>().GetAllAsync();
             var coupon = coupons.FirstOrDefault(c => c.Code == couponCode && c.IsActive);
 
@@ -42,9 +39,6 @@ public class PaymentService
             }
         }
 
-        // ---------------------------------------------------------------------
-        // ADIM 2: ÖDEME YÖNTEMİNE GÖRE İŞLEM
-        // ---------------------------------------------------------------------
 
         // --- SENARYO A: CÜZDAN İLE ÖDEME ---
         if (paymentType == PaymentType.Wallet)
@@ -75,7 +69,6 @@ public class PaymentService
             return true;
         }
 
-        // --- SENARYO B: KREDİ KARTI İLE ÖDEME (SİMÜLASYON) ---
         else if (paymentType == PaymentType.CreditCard)
         {
             // Kart bilgisi gelmiş mi?

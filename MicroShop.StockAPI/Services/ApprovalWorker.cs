@@ -35,17 +35,14 @@ public class ApprovalWorker : BackgroundService
 
             Console.WriteLine($"[ApprovalWorker] İnceleme Başladı: {productEvent.ProductName}");
 
-            // YAPAY GECİKME (Simülasyon: "Yasaklı kelime taraması yapılıyor...")
             await Task.Delay(10000); // 10 Saniye bekle
 
             using var scope = _serviceProvider.CreateScope();
             var stockService = scope.ServiceProvider.GetRequiredService<StockService>();
 
-            // Yasaklı kelime kontrolü (Şaka amaçlı :) )
             if (productEvent.Description.Contains("bomba") || productEvent.Description.Contains("silah"))
             {
                 Console.WriteLine($"[ApprovalWorker] REDDEDİLDİ: {productEvent.ProductName}");
-                // Status Rejected yapılabilir
             }
             else
             {

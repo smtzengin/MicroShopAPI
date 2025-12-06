@@ -46,7 +46,7 @@ public class StockWorker : BackgroundService
             {
                 if (sagaEvent.IsCompensating)
                 {
-                    // --- ROLLBACK (İADE) ---
+
                     await stockService.ReleaseStockAsync(sagaEvent.Items);
                     sagaEvent.CurrentState = OrderState.Created;
                 }
@@ -73,7 +73,6 @@ public class StockWorker : BackgroundService
                 Console.WriteLine($"[StockWorker] EXCEPTION: {ex.Message}");
             }
 
-            // Sonucu Orchestrator'a bildir
             SendToOrchestrator(sagaEvent);
         };
 

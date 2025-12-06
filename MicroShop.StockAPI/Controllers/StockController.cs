@@ -38,24 +38,24 @@ public class StockController(IUnitOfWork uow, StockService stockService, IMessag
         var categories = await _uow.Repository<Category>().GetAllAsync();
         return Ok(categories);
     }
-    [Authorize]
-    [HttpPost]
-    public async Task<IActionResult> CreateProduct([FromBody] Product product)
+    [Authorize(Roles = "Seller")] 
+    [HttpGet("my-products")]
+    public async Task<IActionResult> GetMyProducts([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
     {
-        // 1. Ürünü "Pending" olarak kaydet
-        var createdProduct = await _stockService.CreateProductAsync(product);
+        var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+        if (userIdClaim == null) return Unauthorized();
 
-        // 2. Onay Kuyruğuna Gönder
-        var eventMessage = new ProductCreatedEvent
+        var sellerId = Guid.Parse(userIdClaim.Value);
+
+        var filter = new ProductFilterParams
         {
-            ProductId = createdProduct.Id,
-            ProductName = createdProduct.Name,
-            Description = createdProduct.Description ?? ""
+            PageNumber = pageNumber,
+            PageSize = pageSize,
+            SellerId = sellerId, 
+            OnlyApproved = false 
         };
 
-        // ARTIK BU ÇALIŞACAK:
-        _messageProducer.SendMessage(eventMessage, "queue.product.approval");
-
-        return Ok(new { Message = "Ürün onaya gönderildi.", ProductId = createdProduct.Id });
+        var response = await _stockService.GetProductsAsync(filter);
+        return Ok(response);
     }
 }

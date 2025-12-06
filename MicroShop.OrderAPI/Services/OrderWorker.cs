@@ -55,7 +55,6 @@ public class OrderWorker : BackgroundService
 
                 Console.WriteLine($"[Orchestrator] HATA TESPİT EDİLDİ: {order.FailReason}");
 
-                // Hangi aşamada patladık? Geriye doğru telafi (Compensate) zinciri
                 switch (sagaEvent.CurrentState)
                 {
                     case OrderState.PaymentTaken:

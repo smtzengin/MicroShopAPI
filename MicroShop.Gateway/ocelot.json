@@ -48,7 +48,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 5004 // BasketAPI Portu (Birazdan ayarlayacağız)
+                    "Port": 5004 
                 }
             ],
             "UpstreamPathTemplate": "/api/basket/{everything}",

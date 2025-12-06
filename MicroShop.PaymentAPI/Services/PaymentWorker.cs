@@ -47,8 +47,7 @@ public class PaymentWorker : BackgroundService
 
             try
             {
-                // Ödeme servisi normal akışta çalışır. 
-                // Ödemenin "Rollback"i genelde para iadesidir ama burada işlem başarısız olursa zaten para çekilmez.
+
                 if (!sagaEvent.IsCompensating)
                 {
                     bool success = await paymentService.ProcessPaymentAsync(sagaEvent.OrderId,sagaEvent.UserId,  sagaEvent.TotalPrice, sagaEvent.CouponCode,sagaEvent.PaymentType,sagaEvent.CardInfo);
@@ -56,13 +55,12 @@ public class PaymentWorker : BackgroundService
                     if (success)
                     {
                         sagaEvent.IsSuccess = true;
-                        sagaEvent.CurrentState = OrderState.PaymentTaken; // Durumu ilerlet
+                        sagaEvent.CurrentState = OrderState.PaymentTaken; 
                     }
                     else
                     {
                         sagaEvent.IsSuccess = false;
                         sagaEvent.ErrorMessage = "Yetersiz Bakiye";
-                        // Durumu değiştirmiyoruz, fail olduğunu Orchestrator anlayacak
                     }
 
                     SendToOrchestrator(sagaEvent);

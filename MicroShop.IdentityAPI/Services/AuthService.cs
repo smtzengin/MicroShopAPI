@@ -13,14 +13,14 @@ namespace MicroShop.IdentityAPI.Services;
 
 public class AuthService(UserManager<ApplicationUser> userManager,
                    SignInManager<ApplicationUser> signInManager,
+                   IMessageProducer messageProducer,
                    IConfiguration configuration)
 {
     private readonly UserManager<ApplicationUser> _userManager = userManager;
     private readonly SignInManager<ApplicationUser> _signInManager = signInManager;
     private readonly IConfiguration _configuration = configuration;
-    private readonly IMessageProducer _messageProducer;
-
-    // --- 1. LOGIN (GÜNCELLENDİ) ---
+    private readonly IMessageProducer _messageProducer = messageProducer; 
+    // --- 1. LOGIN  ---
     public async Task<AuthResponseDto> LoginAsync(LoginDto model)
     {
         var user = await _userManager.FindByEmailAsync(model.Email);
@@ -32,12 +32,14 @@ public class AuthService(UserManager<ApplicationUser> userManager,
             return new AuthResponseDto { IsSuccess = false, ErrorMessage = "Şifre hatalı" };
 
         // Access Token Üret
-        var accessToken = GenerateJwtToken(user);
+        var accessToken = await GenerateJwtToken(user);
 
         // Refresh Token Üret
         var refreshToken = GenerateRefreshToken();
 
-        // Refresh Token'ı DB'ye kaydet (Örn: 7 gün geçerli)
+        var roles = await _userManager.GetRolesAsync(user);
+
+        // Refresh Token'ı DB'ye kaydet
         user.RefreshToken = refreshToken;
         user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
         await _userManager.UpdateAsync(user);
@@ -46,12 +48,26 @@ public class AuthService(UserManager<ApplicationUser> userManager,
         {
             AccessToken = accessToken,
             RefreshToken = refreshToken,
+            Roles = roles.ToList(), // Rolleri DTO'ya ekle
             IsSuccess = true
         };
     }
 
     public async Task<(bool IsSuccess, string Error)> RegisterAsync(RegisterDto model)
     {
+        // 1. Rol Güvenlik Kontrolü
+        // Kullanıcı API üzerinden kendine "Admin" rolü veremesin!
+        if (model.Role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+        {
+            return (false, "Admin rolü ile kayıt olunamaz.");
+        }
+
+        // Sadece izin verilen roller (Customer, Seller)
+        if (model.Role != "Customer" && model.Role != "Seller")
+        {
+            return (false, "Geçersiz rol seçimi.");
+        }
+
         var user = new ApplicationUser
         {
             UserName = model.UserName,
@@ -63,13 +79,20 @@ public class AuthService(UserManager<ApplicationUser> userManager,
 
         if (result.Succeeded)
         {
+            // --- 2. ROL ATAMA (YENİ KISIM) ---
+            // Kullanıcı oluştu, şimdi rolünü verelim
+            await _userManager.AddToRoleAsync(user, model.Role);
+
+            // 3. Event Fırlatma (Cüzdan oluşturma)
             var eventMessage = new UserCreatedEvent
             {
-                UserId = Guid.Parse(user.Id), // Identity string tutar, biz Guid'e çeviriyoruz
+                UserId = Guid.Parse(user.Id),
                 Email = user.Email,
-                FullName = user.FullName
+                FullName = user.FullName,
+                Role = model.Role
             };
             _messageProducer.SendMessage(eventMessage, "queue.identity.user-created");
+
             return (true, null);
         }
 
@@ -95,7 +118,7 @@ public class AuthService(UserManager<ApplicationUser> userManager,
         }
 
         // 3. Yeni Tokenları Üret (Rotation: Refresh Token da değişir güvenlik için)
-        var newAccessToken = GenerateJwtToken(user);
+        var newAccessToken = await GenerateJwtToken(user);
         var newRefreshToken = GenerateRefreshToken();
 
         // 4. DB'yi Güncelle
@@ -113,22 +136,31 @@ public class AuthService(UserManager<ApplicationUser> userManager,
 
     // --- YARDIMCI METOTLAR ---
 
-    private string GenerateJwtToken(ApplicationUser user)
+    // Metodun imzasını Task<string> yap
+    private async Task<string> GenerateJwtToken(ApplicationUser user)
     {
         var jwtSettings = _configuration.GetSection("JwtSettings");
         var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
 
+        // Kullanıcının rollerini çek
+        var userRoles = await _userManager.GetRolesAsync(user);
+
         var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim(ClaimTypes.Name, user.UserName),
+        new Claim(ClaimTypes.Email, user.Email)
+    };
+
+        // Rolleri claim olarak ekle
+        foreach (var role in userRoles)
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id),
-            new Claim(ClaimTypes.Name, user.UserName),
-            new Claim(ClaimTypes.Email, user.Email)
-        };
+            claims.Add(new Claim(ClaimTypes.Role, role));
+        }
 
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(claims),
-            // Access Token ömrü kısadır (Örn: 15-60 dk)
             Expires = DateTime.UtcNow.AddMinutes(double.Parse(jwtSettings["DurationInMinutes"])),
             Issuer = jwtSettings["Issuer"],
             Audience = jwtSettings["Audience"],

@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("http://localhost:4200") // Angular adresi
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials(); // Cookie/Auth headerları için gerekli
+              .AllowCredentials(); 
     });
 });
 

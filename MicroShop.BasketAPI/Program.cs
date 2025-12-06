@@ -1,5 +1,5 @@
 ﻿using MicroShop.BasketAPI.Services;
-using MicroShop.Shared.Extensions; // Shared referansını unutma
+using MicroShop.Shared.Extensions; 
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,8 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthentication(); // <-- Giriş kontrolü
-app.UseAuthorization();  // <-- Yetki kontrolü
+app.UseAuthentication(); 
+app.UseAuthorization(); 
 
 app.MapControllers();
 

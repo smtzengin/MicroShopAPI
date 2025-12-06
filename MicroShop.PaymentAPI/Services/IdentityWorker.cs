@@ -34,7 +34,7 @@ public class IdentityWorker : BackgroundService
             var body = ea.Body.ToArray();
             var json = Encoding.UTF8.GetString(body);
 
-            // Case-Insensitive ayarı (BOŞ GUID HATASI OLMASIN DİYE)
+            // Case-Insensitive ayarı 
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             var userEvent = JsonSerializer.Deserialize<UserCreatedEvent>(json, options);
 
@@ -48,11 +48,13 @@ public class IdentityWorker : BackgroundService
 
                 if (existingWallet == null)
                 {
+                    decimal initialBalance = (userEvent.Role == "Customer") ? 500 : 0;
+
                     var newWallet = new Wallet
                     {
                         UserId = userEvent.UserId, // Gelen ID
                         OwnerName = userEvent.FullName,
-                        Balance = 0, // Yeni kullanıcıya 0 bakiye (veya hoşgeldin bonusu 100 verelim mi? :) )
+                        Balance = initialBalance,
                         CreatedAt = DateTime.UtcNow
                     };
 

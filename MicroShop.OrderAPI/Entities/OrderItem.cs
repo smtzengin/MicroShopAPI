@@ -11,6 +11,8 @@ public class OrderItem : BaseEntity
     public decimal Price { get; set; }
     public int Quantity { get; set; }
 
+    public Guid SellerId { get; set; }
+
     // Hangi siparişe ait?
     public Guid OrderId { get; set; }
     public Order Order { get; set; }

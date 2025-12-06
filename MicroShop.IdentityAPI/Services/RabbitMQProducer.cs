@@ -20,7 +20,6 @@ public class RabbitMQProducer : IMessageProducer
 
     public void SendMessage<T>(T message, string queueName)
     {
-        // Kuyruğu garantiye al
         _channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
         var json = JsonSerializer.Serialize(message);
